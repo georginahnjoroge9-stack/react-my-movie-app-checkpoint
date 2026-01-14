@@ -1,4 +1,3 @@
-// Component for filtering movies by title and rating
 function Filter({ titleFilter, setTitleFilter, ratingFilter, setRatingFilter }) {
   return (
     <div className="filter">
@@ -10,9 +9,9 @@ function Filter({ titleFilter, setTitleFilter, ratingFilter, setRatingFilter }) 
       />
       <input
         type="number"
-        placeholder="Min rating (0-5)"
         min="0"
         max="5"
+        placeholder="Minimum rating"
         value={ratingFilter}
         onChange={(e) => setRatingFilter(Number(e.target.value))}
       />
@@ -21,4 +20,3 @@ function Filter({ titleFilter, setTitleFilter, ratingFilter, setRatingFilter }) 
 }
 
 export default Filter;
-
